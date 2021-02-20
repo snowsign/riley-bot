@@ -60,9 +60,11 @@ var awaitSpeak = function(oldState:Discord.VoiceState, newState:Discord.VoiceSta
 }
 
 async function yellRiley(channel:Discord.VoiceChannel) {
-    var connection = await channel.join().catch(err => {
-        console.error(err);
-    });
+    if (channel) {
+        var connection = await channel.join().catch(err => {
+            console.error(err);
+        });
+    }
     if (connection) {
         var dispatcher = connection.play('riley.wav');
         dispatcher.on('finish', () => {
