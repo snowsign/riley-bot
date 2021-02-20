@@ -1,0 +1,16 @@
+{
+  "name": "riley-bot",
+  "version": "1.0.0",
+  "description": "Loudly exclaims \"Riley!\" every time this guy named Riley joins a VC",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ethan Gibbs",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/opus": "^0.4.0",
+    "discord.js": "^12.5.1",
+    "ffmpeg-static": "^4.2.7"
+  }
+}
