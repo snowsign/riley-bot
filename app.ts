@@ -17,6 +17,7 @@ fs.readFile('config.json').then(file => {
 });
 
 client.on('ready', () => {
+    client.user!.setActivity('Riley\'s every move.', { type: "WATCHING"})
     console.log('Ready to rock and Riley!');
 });
 
